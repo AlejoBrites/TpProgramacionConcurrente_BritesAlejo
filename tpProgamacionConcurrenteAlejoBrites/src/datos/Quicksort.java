@@ -5,8 +5,7 @@ import java.util.concurrent.RecursiveAction;
 
 public class Quicksort extends Thread {
 	private static final int THRESHOLD = 10; // constante que determina el tamaño mínimo del subarray que va a
-												// determinar si usar el metodo secuencial en lugar de dividirlo y
-												// ejecutarla en paralelo
+												// determinar si se usa el metodo secuencial o el metodo concurrente
 	private int arr[];
 	private int low, high;
 
