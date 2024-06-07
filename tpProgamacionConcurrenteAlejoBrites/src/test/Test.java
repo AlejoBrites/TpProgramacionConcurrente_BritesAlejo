@@ -32,7 +32,7 @@ public class Test {
 		tiempoFinal = System.nanoTime() - tiempoInicial;
 		// mostramos ordenado
 		// Funciones.mostrarArray(arrayCopia1);
-		System.out.println("\n El algoritmo secuencial tardo " + tiempoFinal / 1000 + " nanosegundos en ordenarse");
+		System.out.println("\n El algoritmo secuencial tardo " + tiempoFinal / 1000 + " microsegundos en ordenarse");
 
 		System.out.println("\n Concurrente: ");
 		// mostramos sin ordenar
@@ -44,7 +44,7 @@ public class Test {
 		tiempoFinal = System.nanoTime() - tiempoInicial;
 		// mostramos ordenado
 		// Funciones.mostrarArray(arrayCopia2);
-		System.out.println("\n El algoritmo concurrente tardo " + tiempoFinal / 1000 + " nanosegundos en ordenarse");
+		System.out.println("\n El algoritmo concurrente tardo " + tiempoFinal / 1000 + " microsegundos en ordenarse");
 
 	}
 
