@@ -4,7 +4,7 @@ import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.RecursiveAction;
 
 public class Quicksort extends Thread {
-	private static final int THRESHOLD = 10; // constante que determina el tamaño mínimo del subarray que va a
+	private static final int THRESHOLD = 1000; // constante que determina el tamaño mínimo del subarray que va a
 												// determinar si se usa el metodo secuencial o el metodo concurrente
 	private int arr[];
 	private int low, high;
@@ -22,8 +22,8 @@ public class Quicksort extends Thread {
 	}
 
 	public static void concurrenteQuicksort(int[] arr, int low, int high) {
-		// Crea una instancia de ForkJoinPool, que es un tipo de ExecutorService
-		// diseñado para tareas recursivas de "divide y vencerás"
+		// Crea una instancia de ForkJoinPool, diseñado para tareas recursivas de
+		// "divide y vencerás"
 		ForkJoinPool pool = new ForkJoinPool();
 		// Inicia la ejecución de la tarea SortTask con el array y los límites
 		// especificados
